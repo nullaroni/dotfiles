@@ -68,6 +68,29 @@ Alternative tiling window manager (Niri/Hyprland-inspired) with:
 - App rules for floating (Finder, Calculator, etc.)
 - Workspace bar and hidden status bar icons
 
+### Omarchy (Linux)
+
+[Omarchy](https://omarchy.org/) / Hyprland setup that mirrors the AeroSpace keys. Set up a fresh install with:
+
+```bash
+git clone https://github.com/nullaroni/dotfiles.git ~/Developer/dotfiles
+~/Developer/dotfiles/omarchy/install.sh
+```
+
+| Path | Symlinks To |
+|------|------------|
+| `omarchy/hypr/bindings.lua` | `~/.config/hypr/bindings.lua` |
+| `omarchy/hypr/looknfeel.lua` | `~/.config/hypr/looknfeel.lua` |
+| `omarchy/hypr/monitors.lua` | `~/.config/hypr/monitors.lua` |
+| `omarchy/omarchy/shell.json` | `~/.config/omarchy/shell.json` |
+
+The installer backs up any existing files, links these in, sets the Gruvbox theme, reloads Hyprland, and runs `limine.sh` with sudo (skip it with `SKIP_LIMINE=1`).
+
+- AeroSpace-style keys: `Alt+h/j/k/l` focus, `Alt+Shift+h/j/k/l` move, `Alt+1..0` workspaces, `Alt+Shift+1..0` send window, `Alt+Tab` previous workspace, `Alt+Shift+R` resize mode, `Alt+Shift+;` service mode
+- Rounded window corners, 1.5x monitor scale
+- 12-hour bar clock and world clock cities
+- `limine.sh`: boot menu always shown, 15 second timeout, Windows Boot Manager detected
+
 ### Zsh
 
 - Starship prompt
